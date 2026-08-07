@@ -58,3 +58,62 @@ function findMin(arr) {
 }
 
 console.log(findMin([10, 5, 20, 8]));
+
+
+/*===== Loops ======*/
+-- for Loop ---
+<php
+for($x = 1; $x <= 20; $x++){
+    echo "Number - <br>";
+}
+?>
+
+-- While Loops ---
+
+<php
+$i = 0;
+while ($i <= 6) {
+    echo $i;
+    $i++;
+}
+?>
+
+-- do...while loop --
+
+<?php
+$i = 1;
+
+do{
+    echo $i;
+    $i++;
+}while($i <= 5);
+?>
+
+-- foreach loop --
+
+<?php
+$colors = ["Red", "Green", "Blue"];
+
+foreach($colors as $color){
+    echo $color;
+}
+?>
+
+
+/*====== Reverse Array ======*/
+
+function findDuplicates(arr) {
+  let duplicates = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j] && !duplicates.includes(arr[i])) {
+        duplicates.push(arr[i]);
+      }
+    }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicates([1, 2, 3, 2, 4, 1]));
