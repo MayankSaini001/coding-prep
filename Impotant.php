@@ -42,3 +42,19 @@ function findMax(arr) {
 console.log(findMax([10, 5, 20, 8]));
 
 
+
+/*===== find Minimum No. in array ======*/
+
+function findMin(arr) {
+  let min = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+
+  return min;
+}
+
+console.log(findMin([10, 5, 20, 8]));
