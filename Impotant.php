@@ -117,3 +117,15 @@ function findDuplicates(arr) {
 }
 
 console.log(findDuplicates([1, 2, 3, 2, 4, 1]));
+
+
+/*====== Indexed Array  ======*/
+$users = ["John","David"];
+
+
+/*====== Associative Array ======*/
+$users = [
+"name" = "John",
+"age" = "25"
+];
+
