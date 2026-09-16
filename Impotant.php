@@ -129,3 +129,20 @@ $users = [
 "age" = "25"
 ];
 
+/*====== Array duplicate values check======*/
+<?php
+$arr = [1, 2, 3, 3, 4, 5, 2, 6];
+
+$result = [];
+
+foreach ($arr as $value) {
+
+    if (in_array($value, $result)) {
+        echo $value . "\n";
+    } else {
+        $result[] = $value;
+    }
+
+}
+
+?>

@@ -26,6 +26,7 @@
 
 // Output = [2, 4, 6]
 
+
 <?php
 
 $arr = [1,2,3,3,4,5];
@@ -39,5 +40,21 @@ foreach ($arr as $value) {
 }
 
 print_r($result);
+
+?>
+<?php
+$arr = [1, 2, 3, 3, 4, 5, 2, 6];
+
+$result = [];
+
+foreach ($arr as $value) {
+
+    if (in_array($value, $result)) {
+        echo $value . "\n";
+    } else {
+        $result[] = $value;
+    }
+
+}
 
 ?>
