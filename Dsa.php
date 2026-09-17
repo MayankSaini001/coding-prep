@@ -27,9 +27,9 @@
 // Output = [2, 4, 6]
 
 
-<?php
 
-$arr = [1,2,3,3,4,5];
+
+<!-- $arr = [1,2,3,3,4,5];
 
 $result = [];
 
@@ -39,11 +39,11 @@ foreach ($arr as $value) {
     }
 }
 
-print_r($result);
+print_r($result); -->
 
-?>
-<?php
-$arr = [1, 2, 3, 3, 4, 5, 2, 6];
+
+
+<!-- $arr = [1, 2, 3, 3, 4, 5, 2, 6];
 
 $result = [];
 
@@ -55,7 +55,59 @@ foreach ($arr as $value) {
         $result[] = $value;
     }
 
+} -->
+
+
+
+// $arr = [1,2,2,3,4,5,5,6];
+
+// $result = [];
+
+// foreach ($arr as $value) {
+
+// if(in_array($value, $result)) {
+// echo $value . "\n";
+
+// }else {
+
+//       $result[] = $value;
+// }
+// }
+
+// Attract
+
+// function reverseString($str) {
+//     $result = "";
+//     for($i = strlen($str) - 1;$i >= 0; $i--){
+//   $result .= $str[$i];
+// } 
+// return $result;
+// }
+
+// echo reverseString ("attract");
+
+// Function reverseString($str){
+
+// $result = "";
+
+// for($str - strlen($str) - 1; $i >= 1; $i--){
+// $result .=$str[$i];
+// }
+// return $result;
+// }
+// result reverseString("Mayank");
+
+<?php
+function reversedString($str) {
+    $result = "";
+
+    for ($i = strlen($str) - 1; $i >= 0; $i--) {
+        $result .= $str[$i];
+    }
+
+    return $result;
 }
 
-?>
+echo reversedString("VsCode");
 
+?>

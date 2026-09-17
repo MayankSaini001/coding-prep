@@ -130,7 +130,7 @@ $users = [
 ];
 
 /*====== Array duplicate values check======*/
-<?php
+
 $arr = [1, 2, 3, 3, 4, 5, 2, 6];
 
 $result = [];
@@ -145,4 +145,17 @@ foreach ($arr as $value) {
 
 }
 
-?>
+
+/*====== reversedString ======*/
+
+function reversedString($str) {
+    $result = "";
+
+    for ($i = strlen($str) - 1; $i >= 0; $i--) {
+        $result .= $str[$i];
+    }
+
+    return $result;
+}
+
+echo reversedString("VsCode");
