@@ -159,3 +159,22 @@ function reversedString($str) {
 }
 
 echo reversedString("VsCode");
+
+
+/*====== secondLargest ======*/
+
+$arr = [10, 5, 20, 8, 15];
+
+$largest = $arr[0];
+$secondLargest = $arr[0];
+
+for ($i = 1; $i < count($arr); $i++) {
+    if ($arr[$i] > $largest) {
+        $secondLargest = $largest;
+        $largest = $arr[$i];
+    } elseif ($arr[$i] > $secondLargest && $arr[$i] != $largest) {
+        $secondLargest = $arr[$i];
+    }
+}
+
+echo $secondLargest;

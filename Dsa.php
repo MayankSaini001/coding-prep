@@ -97,17 +97,49 @@ foreach ($arr as $value) {
 // }
 // result reverseString("Mayank");
 
+
+// function reversedString($str) {
+//     $result = "";
+
+//     for ($i = strlen($str) - 1; $i >= 0; $i--) {
+//         $result .= $str[$i];
+//     }
+
+//     return $result;
+// }
+
+// echo reversedString("VsCode");
+
+
+// function reversedString($str){
+// $result = "";
+
+// for($i = strlen($str) - 1; $i >= 0; $i--){
+//    $result .= $str[$i];
+// }
+// return $result;
+// }
+
+// echo reversedString("Reverse");
+
 <?php
-function reversedString($str) {
-    $result = "";
+$arr = [10, 5, 20, 8, 15];
 
-    for ($i = strlen($str) - 1; $i >= 0; $i--) {
-        $result .= $str[$i];
+$largest = $arr[0];
+$secondLargest = $arr[0];
+
+for ($i = 1; $i < count($arr); $i++) {
+    if ($arr[$i] > $largest) {
+        $secondLargest = $largest;
+        $largest = $arr[$i];
+    } elseif ($arr[$i] > $secondLargest && $arr[$i] != $largest) {
+        $secondLargest = $arr[$i];
     }
-
-    return $result;
 }
 
-echo reversedString("VsCode");
+echo $secondLargest;
+
+
+
 
 ?>
